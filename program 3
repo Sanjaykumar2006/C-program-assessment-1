@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int age,travel_distance;
+    char passenger_name[50];
+    printf ("passenger_name :");
+    scanf("%c",&passenger_name);
+     printf ("\nAge :");
+    scanf("%d",&age);
+     printf ("\ntravel_distance :");
+    scanf("%d",&travel_distance);
+    int ticket_price = travel_distance *3;
+    printf("\n",ticket_price);
+    
+    
+
+    return 0;
+}
