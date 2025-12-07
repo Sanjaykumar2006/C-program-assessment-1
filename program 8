@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+    int level;
+
+    printf("Enter water level percentage (0 - 100): ");
+    scanf("%d", &level);
+
+    
+    if (level < 0 || level > 100)
+    {
+        printf("Invalid input! Please enter value between 0 and 100.\n");
+        return 0;
+    }
+
+    if (level < 10)
+    {
+        printf("CRITICAL WATER LEVEL! \n");
+    }
+
+    if (level < 30)
+    {
+        printf("Water Level Status : LOW\n");
+        printf("Turn ON pump to fill the tank\n");
+    }
+    else if (level <= 70)
+    {
+        printf("Water Level Status : MEDIUM\n");
+        printf(" Monitor regularly\n");
+    }
+    else
+    {
+        printf("Water Level Status : HIGH\n");
+        printf("Turn OFF pump to prevent overflow\n");
+    }
+
+    return 0;
+}
